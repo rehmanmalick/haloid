@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+  <title>Vite App</title>
+  <style>
+    /* Custom Scrollbar */
+    .scroll-container::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .scroll-container::-webkit-scrollbar-track {
+      background: #e5e7eb;
+      border-radius: 10px;
+    }
+
+    .scroll-container::-webkit-scrollbar-thumb {
+      background: #9333ea;
+      border-radius: 10px;
+    }
+
+    /* Click & Drag Scrolling */
+    .scroll-container {
+      display: flex;
+      flex-direction: row;
+      cursor: grab;
+      overflow-x: auto;
+      white-space: nowrap;
+      scroll-behavior: smooth;
+      user-select: none;
+      /* Prevents text selection */
+    }
+
+    .scroll-container:active {
+      cursor: grabbing;
+    }
+
+    .swiper-wrapper {
+      transition-timing-function: linear !important;
+    }
+
+    /* Custom Scrollbar Styles */
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #9333ea;
+      /* Tailwind Purple-600 */
+      border-radius: 10px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #7e22ce;
+      /* Darker Purple */
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <script src="header.js"></script>
+  <script src="footer.js"></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class=" min-h-screen">
+  <!-- Header will be inserted here -->
+  <div id="header-container"></div>
+
+  <!-- Hero Section 1 -->
+  <section
+    class="relative bg-[url('/dist/Hero-bg_upscayl_2x_realesrgan-x4plus-scaled.webp')] bg-cover bg-center text-white pt-24">
+    <div class="container max-w-7xl mx-auto px-6 py-12 flex flex-col lg:flex-row items-center">
+      <!-- Left Side Text Content -->
+      <div class="lg:w-1/2">
+        <h1 class="text-[32px] font-hero-heading lg:text-start text-center  lg:text-5xl font-bold leading-tight">
+          A Top-Tier Custom<br />Software Development Agency in the USA
+        </h1>
+        <p class="mt-4 text-lg lg:text-start text-center font-para text-gray-300">
+          We create cutting-edge modern software solutions that match your needs and deliver real results!
+        </p>
+        <div class="flex justify-center items-center lg:justify-start md:gap-24 mt-6 md:space-x-6">
+
+          <a href="#"
+            class=" inline-flex items-center gap-x-2 px-6 py-3 text-lg font-medium font-para text-white rounded-lg bg-gradient-to-r from-[#2f3ba2] to-[#8138bc] hover:from-[#8138bc] hover:to-[#2f3ba2] transition duration-500 ease-in-out  ">
+            <span>Schedule A Free Call Now!</span>
+            <span>
+              <svg class="w-4 h-4 " xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 21 18"
+                fill="none">
+                <path d="M17 3L5.5 14.5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path d="M17 13.27V3H6.73" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+          </a>
+          <img class="lg:block hidden" src="/dist/curve-arrow-vector.png" alt="Trustpilot" class="h-8" />
+        </div>
+        <div class="flex lg:justify-evenly justify-center  items-center  flex-wrap mt-6 space-x-6 gap-4">
+          <img src="/dist/google-review.png" alt="Google Reviews" class="h-8" />
+          <img src="/dist/good-firms.png" alt="GoodFirms" class="h-8" />
+          <img src="/dist/clutch.png" alt="Clutch" class="h-8" />
+          <img src="/dist/trust-pilot.png" alt="Trustpilot" class="h-8" />
+        </div>
+      </div>
+
+      <!-- Right Side Image -->
+      <div class="lg:w-1/2 mt-10 lg:mt-0 relative">
+        <img src="/dist/Group 250 (1) (1).webp" alt="Hero Section" class="w-full rounded-lg shadow-lg" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- section 2 -->
+  <!-- mySwiper1 class is mySwiper/serialno/sectionno -->
+  <section class="container max-w-7xl mx-auto  flex flex-col items-center justify-center px-6 py-12">
+    <h2 class="text-[24px] font-heading font-semibold text-gray-font  mb-6 text-center">
+      Trusted by Global Enterprises, SMEs, Tech Innovators and Businesses
+    </h2>
+
+    <!-- First Row (Right to Left) -->
+    <div class="container max-w-7xl overflow-hidden border-b-2 border-[#B3B3B3]">
+      <div class="swiper mySwiper12">
+        <div class="swiper-wrapper flex items-center">
+          <div
+            class="swiper-slide flex items-center justify-center p-4 top-[50%] relative before:absolute before:w-[2px] before:h-[111px] before:left-0 before:bg-[url('/dist/Vector-42.webp')] before:bg-cover before:bg-center before:top-0">
+            <img src="/dist/2Group-1577705273-5.webp" alt="Logo 1" class="mx-auto" />
+          </div>
+          <div
+            class="swiper-slide flex items-center justify-center p-4 top-[] relative before:absolute before:w-[2px] before:h-[111px] before:left-0 before:bg-[url('/dist/Vector-42.webp')] before:bg-cover before:bg-center before:top-0">
+            <img src="/dist/2Group-1577705273-3.webp" alt="Logo 2" class="mx-auto" />
+          </div>
+          <div
+            class="swiper-slide flex items-center justify-center p-4 relative before:absolute before:w-[2px] before:h-[111px] before:left-0 before:bg-[url('/dist/Vector-42.webp')] before:bg-cover before:bg-center before:top-0">
+            <img src="/dist/2Group-1577705273-2.webp" alt="Logo 3" class="mx-auto" />
+          </div>
+          <div
+            class="swiper-slide flex items-center justify-center p-4 relative before:absolute before:w-[2px] before:h-[111px] before:left-0 before:bg-[url('/dist/Vector-42.webp')] before:bg-cover before:bg-center before:top-0">
+            <img src="/dist/2Group-1577705273-1.webp" alt="Logo 4" class="mx-auto" />
+          </div>
+          <div
+            class="swiper-slide flex items-center justify-center p-4 relative before:absolute before:w-[2px] before:h-[111px] before:left-0 before:bg-[url('/dist/Vector-42.webp')] before:bg-cover before:bg-center before:top-0">
+            <img src="/dist/2Group-1577705273-7.webp" alt="Logo 5" class="mx-auto" />
+          </div>
+          <div
+            class="swiper-slide flex justify-center p-4 relative before:absolute before:w-[2px] before:h-[111px] before:left-0 before:bg-[url('/dist/Vector-42.webp')] before:bg-cover before:bg-center before:top-0">
+            <img src="/dist/2Group-1577705273-6.webp" alt="Logo 11" class="mx-auto" />
+          </div>
+          <div
+            class="swiper-slide flex justify-center p-4 relative before:absolute before:w-[2px] before:h-[111px] before:left-0 before:bg-[url('/dist/Vector-42.webp')] before:bg-cover before:bg-center before:top-0">
+            <img src="/dist/Group-1577705282.webp" alt="Logo 12" class="mx-auto" />
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row (Left to Right) -->
+
+    <div class="container max-w-7xl overflow-hidden">
+      <div class="swiper mySwiper22">
+        <div class="swiper-wrapper flex items-center">
+          <div
+            class="swiper-slide flex justify-center p-4 relative before:absolute before:w-[2px] before:h-[111px] before:left-0 before:bg-[url('/dist/Vector-41.webp')] before:bg-cover before:bg-center before:top-[-10px]">
+            <img src="/dist/2Group-1577705273-5.webp" alt="Logo 8" class="mx-auto" />
+          </div>
+          <div
+            class="swiper-slide flex justify-center p-4 relative before:absolute before:w-[2px] before:h-[111px] before:left-0 before:bg-[url('/dist/Vector-41.webp')] before:bg-cover before:bg-center before:top-[-10px]">
+            <img src="/dist/2Group-1577705273-3.webp" alt="Logo 9" class="mx-auto" />
+          </div>
+          <div
+            class="swiper-slide flex justify-center p-4 relative before:absolute before:w-[2px] before:h-[111px] before:left-0 before:bg-[url('/dist/Vector-41.webp')] before:bg-cover before:bg-center before:top-[-20px]">
+            <img src="/dist/2Group-1577705273-2.webp" alt="Logo 10" class="mx-auto" />
+          </div>
+          <div
+            class="swiper-slide flex justify-center p-4 relative before:absolute before:w-[2px] before:h-[111px] before:left-0 before:bg-[url('/dist/Vector-41.webp')] before:bg-cover before:bg-center before:top-[-10px]">
+            <img src="/dist/2Group-1577705273-1.webp" alt="Logo 11" class="mx-auto" />
+          </div>
+          <div
+            class="swiper-slide flex justify-center p-4 relative before:absolute before:w-[2px] before:h-[111px] before:left-0 before:bg-[url('/dist/Vector-41.webp')] before:bg-cover before:bg-center before:top-[-10px]">
+            <img src="/dist/2Group-1577705273-7.webp" alt="Logo 12" class="mx-auto" />
+          </div>
+          <div
+            class="swiper-slide flex justify-center p-4 relative before:absolute before:w-[2px] before:h-[111px] before:left-0 before:bg-[url('/dist/Vector-41.webp')] before:bg-cover before:bg-center before:top-[-20px]">
+            <img src="/dist/2Group-1577705273-6.webp" alt="Logo 11" class="mx-auto" />
+          </div>
+          <div
+            class="swiper-slide flex justify-center p-4 relative before:absolute before:w-[2px] before:h-[111px] before:left-0 before:bg-[url('/dist/Vector-41.webp')] before:bg-cover before:bg-center before:top-[-10px]">
+            <img src="/dist/Group-1577705282.webp" alt="Logo 12" class="mx-auto" />
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- seciotn 3 -->
+  <section class="container max-w-7xl mx-auto px-6 py-12">
+    <!-- Heading -->
+    <div class=" mb-8  text-gray-font">
+      <h2 class=" sm:text-4xl text-2xl   sm:text-start text-center font-heading font-semibold text-gray-font">
+        Discover Our Premier Services
+      </h2>
+    </div>
+
+    <!-- Scrollable Cards Container (Click Anywhere to Scroll) -->
+    <div class="relative p-4">
+      <div class="scroll-container space-x-6">
+        <div class="flex flex-row gap-3 px-8 mb-8">
+          <!-- Card 1 -->
+          <div class="w-[280px]  bg-white border border-gray-200 shadow-[60px_50px_100px_0px_rgba(0,0,0,0.08)]
+              md:border-transparent md:shadow-none
+              md:hover:border-gray-200 md:hover:shadow-[60px_50px_100px_0px_rgba(0,0,0,0.08)] rounded-xl p-6">
+            <img src="/dist/keyboard-open.webp" alt="Web Dev" class="mb-4" />
+            <div class="w-full flex flex-col gap-4 whitespace-normal">
+              <h3 class="text-xl leading-tight font-heading font-semibold">Web Development</h3>
+              <p class="text-gray-600 text-base font-para">
+                Haloid offers web development services using the modern approaches for fast and optimized websites.
+              </p>
+              <a href="#" class="text-gray-font underline font-semibold mt-2 inline-flex items-center  gap-x-2">
+                <span>Learn More</span>
+                <span >
+      <svg class="w-4 h-4 " 
+        xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 21 18" fill="none">
+        <path d="M17 3L5.5 14.5" stroke="#8138bc" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M17 13.27V3H6.73" stroke="#8138bc" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </span> 
+              </a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+
+          <div class="w-[280px]  bg-white border border-gray-200 shadow-[60px_50px_100px_0px_rgba(0,0,0,0.08)]
+              md:border-transparent md:shadow-none
+              md:hover:border-gray-200 md:hover:shadow-[60px_50px_100px_0px_rgba(0,0,0,0.08)] rounded-xl p-6">
+            <img src="/dist/bezier.webp" alt="UI/UX" class="mb-4" />
+            <div class="w-full flex flex-col gap-4 whitespace-normal">
+              <h3 class="text-xl leading-tight font-heading font-semibold">UI/UX</h3>
+              <p class="text-gray-600 text-base font-para">
+                We also have specialized teams of creative UI/UX designers that turn ideas into engaging designs.						
+              </p>
+              <a href="#" class="text-gray-font underline font-semibold mt-2 inline-flex items-center  gap-x-2">
+                <span>Learn More</span>
+                <span >
+      <svg class="w-4 h-4 " 
+        xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 21 18" fill="none">
+        <path d="M17 3L5.5 14.5" stroke="#8138bc" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M17 13.27V3H6.73" stroke="#8138bc" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </span> 
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+
+          <div class="w-[280px]  bg-white border border-gray-200 shadow-[60px_50px_100px_0px_rgba(0,0,0,0.08)]
+              md:border-transparent md:shadow-none
+              md:hover:border-gray-200 md:hover:shadow-[60px_50px_100px_0px_rgba(0,0,0,0.08)] rounded-xl p-6">
+            <img src="/dist/mobile-programming.webp" alt="Mobile App" class="mb-4" />
+            <div class="w-full flex flex-col gap-4 whitespace-normal">
+              <h3 class="text-xl leading-tight font-heading font-semibold">Mobile App Development</h3>
+              <p class="text-gray-600 text-base font-para">
+               We provide Mobile App Development services with both native and cross-platform approaches.						
+              </p>
+              <a href="#" class="text-gray-font underline font-semibold mt-2 inline-flex items-center  gap-x-2">
+                <span>Learn More</span>
+                <span >
+      <svg class="w-4 h-4 " 
+        xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 21 18" fill="none">
+        <path d="M17 3L5.5 14.5" stroke="#8138bc" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M17 13.27V3H6.73" stroke="#8138bc" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </span> 
+              </a>
+            </div>
+          </div>
+          <!-- Card 4 -->
+
+          <div class="w-[280px]  bg-white border border-gray-200 shadow-[60px_50px_100px_0px_rgba(0,0,0,0.08)]
+              md:border-transparent md:shadow-none
+              md:hover:border-gray-200 md:hover:shadow-[60px_50px_100px_0px_rgba(0,0,0,0.08)] rounded-xl p-6">
+            <img src="/dist/brain-circuit-1.webp" alt="Web Dev" class="mb-4" />
+            <div class="w-full flex flex-col gap-4 whitespace-normal">
+              <h3 class="text-xl leading-tight font-heading font-semibold">AI/ML Development services</h3>
+              <p class="text-gray-600 text-base font-para">
+                
+							We provide software solutions also with Modern Technologies like AI and ML.						
+              </p>
+              <a href="#" class="text-gray-font underline font-semibold mt-2 inline-flex items-center  gap-x-2">
+                <span>Learn More</span>
+                <span >
+      <svg class="w-4 h-4 " 
+        xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 21 18" fill="none">
+        <path d="M17 3L5.5 14.5" stroke="#8138bc" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M17 13.27V3H6.73" stroke="#8138bc" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </span> 
+              </a>
+            </div>
+          </div>
+          <!-- Card 5 -->
+
+          <div class="w-[280px] bg-white border border-gray-200 shadow-[60px_50px_100px_0px_rgba(0,0,0,0.08)]
+          md:border-transparent md:shadow-none
+          md:hover:border-gray-200 md:hover:shadow-[60px_50px_100px_0px_rgba(0,0,0,0.08)] rounded-xl p-6">
+            <img src="/dist/shopping-cart.png" alt="Web Dev" class="mb-4" />
+            <div class="w-full flex flex-col gap-4 whitespace-normal">
+              <h3 class="text-xl leading-tight font-heading font-semibold">E-commerce Web Development Services</h3>
+              <p class="text-gray-600 text-base font-para">
+                
+							Get Ecommerce web development solutions tailored to your business needs to boost conversions. 						
+              </p>
+              <a href="#" class="text-gray-font underline font-semibold mt-2 inline-flex items-center  gap-x-2">
+                <span>Learn More</span>
+                <span >
+      <svg class="w-4 h-4 " 
+        xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 21 18" fill="none">
+        <path d="M17 3L5.5 14.5" stroke="#8138bc" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M17 13.27V3H6.73" stroke="#8138bc" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </span> 
+              </a>
+            </div>
+          </div>
+          <!-- Card 6 -->
+
+          <div
+            class="w-[280px] bg-white border border-gray-200 shadow-[60px_50px_100px_0px_rgba(0,0,0,0.08)]
+            md:border-transparent md:shadow-none
+            md:hover:border-gray-200 md:hover:shadow-[60px_50px_100px_0px_rgba(0,0,0,0.08)] rounded-xl p-6">
+            <img src="/dist/password-check.png" alt="Web Dev" class="mb-4" />
+            <div class="w-full flex flex-col gap-4 whitespace-normal">
+              <h3 class="text-xl leading-tight font-heading font-semibold">QA Testing Services</h3>
+              <p class="text-gray-600 text-base font-para">
+                QA Testing services is another prominent service that haloid offers.						
+              </p>
+              <a href="#" class="text-gray-font underline font-semibold mt-2 inline-flex items-center  gap-x-2">
+                <span>Learn More</span>
+                <span >
+      <svg class="w-4 h-4 " 
+        xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 21 18" fill="none">
+        <path d="M17 3L5.5 14.5" stroke="#8138bc" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M17 13.27V3H6.73" stroke="#8138bc" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </span> 
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container max-w-7xl mx-auto px-6 py-12">
+    <div class="text-center mx-auto lg:max-w-4xl max-w-2xl lg:mb-20 md:mb-18 mb-8">
+      <h2 class="lg:text-4xl md:text-3xl text-2xl font-heading font-bold ">
+        From Designing Till Deployment - A Perfect Software Development Agency
+      </h2>
+      <p class="text-gray-600 font-para lg:mt-6 md:mt-4 mt-2">
+        Haloid has been offering a comprehensive range of solutions. As they
+        are quickly growing and have skilled professionals in designing, web
+        and mobile app development, and QA testing services.
+      </p>
+    </div>
+
+    <!-- First Row - Swiper -->
+    <div class="swiper container mySwiper3 mt-6">
+      <div class="swiper-wrapper swiper-wrapper-brand-logo">
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/andriod.webp" alt="PHP" class="mx-auto" />
+          </div>
+        </div>
+
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="./dist/apple.webp" alt="Flutter" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/dotnet-vertical-1.webp" alt="Node.js" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/Group.webp" alt="Java" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/Group2024.webp" alt="Magento" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/image-5.webp" alt="Apple" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/java-icon-1.webp" alt=".NET" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/magento-seeklogo.com-1.webp" alt="PHP" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/Vector.webp" alt="Flutter" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/mobile.webp" alt="Java" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/Tool454.webp" alt="Java" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/Vector665.webp" alt="Java" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/Vectordasdsa.webp" alt="Java" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/globe-1-svgrepo-com-1.webp" alt="Java" class="mx-auto" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row - Swiper -->
+    <div class="swiper mySwiper4 container mt-6">
+      <div class="swiper-wrapper swiper-wrapper-brand-logo">
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/andriod.webp" alt="PHP" class="mx-auto" />
+          </div>
+        </div>
+
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="./dist/apple.webp" alt="Flutter" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/dotnet-vertical-1.webp" alt="Node.js" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/Group.webp" alt="Java" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/Group2024.webp" alt="Magento" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/image-5.webp" alt="Apple" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/java-icon-1.webp" alt=".NET" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/magento-seeklogo.com-1.webp" alt="PHP" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/Vector.webp" alt="Flutter" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/mobile.webp" alt="Java" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/Tool454.webp" alt="Java" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/Vector665.webp" alt="Java" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/Vectordasdsa.webp" alt="Java" class="mx-auto" />
+          </div>
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="w-[98.32px] p-6 h-[98px] rounded-[29px] border border-[#e5e5e5] flex">
+            <img src="/dist/globe-1-svgrepo-com-1.webp" alt="Java" class="mx-auto" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex sm:flex-row flex-col justify-center font-para  lg:mt-17 md:mt-15 mt-12 gap-4 sm:space-x-4">
+      <!-- Book Your Call Button -->
+      <div class="p-0.5 rounded-xl transition duration-300 group    hover:bg-white">
+        <button class="w-full border border-[#8138bc] group md:inline-flex  flex items-center justify-center gap-x-2 bg-white hover:bg-gradient-to-r hover:from-[#8138bc] hover:to-[#2f3ba2] rounded-lg  text-black hover:text-white font-semibold  p-4 transition-all duration-300">
+          <span>Book Your Call</span>
+      <span>
+        <svg class="w-4 h-4 text-purple-600 group-hover:text-white transition-all duration-300" xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 21 18" fill="none">
+          <path d="M17 3L5.5 14.5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M17 13.27V3H6.73" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </span>
+        </button>
+      </div>
+      
+
+      <!-- See All Technologies Button -->
+      <a href="#"
+      class=" md:inline-flex  flex items-center justify-center gap-x-2 px-6 py-3 text-lg font-medium font-para text-white rounded-lg bg-gradient-to-r from-[#2f3ba2] to-[#8138bc] hover:from-[#8138bc] hover:to-[#2f3ba2] transition duration-500 ease-in-out  ">
+      <span>See All Technologies</span>
+      <span>
+        <svg class="w-4 h-4 " xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 21 18"
+          fill="none">
+          <path d="M17 3L5.5 14.5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path d="M17 13.27V3H6.73" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+            stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </span>
+    </a>
+      
+    </div>
+  </section>
+
+  <section class="bg-gray-100 flex justify-center items-center min-h-screen flex-col">
+    <div class="text-center w-full px-4">
+      <h2 class="text-3xl font-bold">Our Pricing</h2>
+      <p class="text-gray-600">Choose a plan that's right for you</p>
+
+      <!-- Toggle Button -->
+      <div class="mt-4 flex justify-center items-center space-x-3">
+        <span class="text-gray-600">One Time</span>
+        <label class="relative inline-flex items-center cursor-pointer">
+          <input type="checkbox" id="toggleSwitch" class="sr-only peer" />
+          <div
+            class="w-14 h-7 bg-gray-300 peer-focus:ring-4 peer-focus:ring-purple-300 rounded-full peer-checked:after:translate-x-7 peer-checked:bg-purple-600 after:content-[''] after:absolute after:top-1 after:left-1 after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all">
+          </div>
+        </label>
+        <span class="text-gray-600">Hourly</span>
+      </div>
+
+      <!-- Tabs -->
+      <div class="mt-6 flex justify-center space-x-3">
+        <button class="tab-btn px-4 py-2 bg-purple-600 text-white rounded-full" data-category="ecommerce">
+          E-Commerce
+        </button>
+        <button class="tab-btn px-4 py-2 border rounded-full" data-category="webdesign">
+          Web Design
+        </button>
+        <button class="tab-btn px-4 py-2 border rounded-full" data-category="seo">
+          SEO
+        </button>
+      </div>
+
+      <!-- Pricing Cards -->
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <!-- Basic Plan -->
+        <div class="pricing-card text-start bg-white p-6 rounded-lg shadow-lg" data-category="ecommerce">
+          <h3 class="text-xl font-bold">Basic</h3>
+          <span class="text-sm bg-purple-200 text-purple-700 px-2 py-1 rounded-full">🎄 Christmas Discount</span>
+          <p class="mt-2 text-3xl font-bold">
+            $<span class="price" data-hourly="4" data-onetime="100"></span>
+            <span class="text-sm text-gray-600">/per hour</span>
+          </p>
+          <button class="mt-4 bg-purple-600 text-white py-2 px-4 rounded-lg w-full">
+            Get Started
+          </button>
+          <div class="mt-4 h-[200px] overflow-y-auto p-2 rounded-lg custom-scrollbar">
+            <ul class="space-y-2 text-gray-600">
+              <li>✔ Everything in Professional plus</li>
+              <li>✔ Custom Designed Homepage (3x Concepts)</li>
+              <li>✔ 20 Custom Designed Inner Pages</li>
+              <li>✔ Interactive and Dynamic Website Design</li>
+              <li>✔ Up to 1000 - 1500 Products</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Professional Plan -->
+        <div class="pricing-card text-start bg-white p-6 rounded-lg shadow-lg border-2 border-purple-600 relative"
+          data-category="ecommerce">
+          <span class="absolute top-0 right-0 bg-red-500 text-white px-3 py-1 text-sm rounded-bl-lg">Best Seller</span>
+          <h3 class="text-xl font-bold">Professional</h3>
+          <span class="text-sm bg-purple-200 text-purple-700 px-2 py-1 rounded-full">🎄 Christmas Discount</span>
+          <p class="mt-2 text-3xl font-bold">
+            $<span class="price" data-hourly="6" data-onetime="200">6</span>
+            <span class="text-sm text-gray-600">/per hour</span>
+          </p>
+          <button class="mt-4 bg-purple-600 text-white py-2 px-4 rounded-lg w-full">
+            Get Started
+          </button>
+          <div class="mt-4 h-[200px] overflow-y-auto p-2 rounded-lg custom-scrollbar">
+            <ul class="space-y-2 text-gray-600">
+              <li>✔ Everything in Professional plus</li>
+              <li>✔ Custom Designed Homepage (3x Concepts)</li>
+              <li>✔ 20 Custom Designed Inner Pages</li>
+              <li>✔ Interactive and Dynamic Website Design</li>
+              <li>✔ Up to 1000 - 1500 Products</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Business Plan -->
+        <div class="pricing-card text-start bg-white p-6 rounded-lg shadow-lg" data-category="ecommerce">
+          <h3 class="text-xl font-bold">Business</h3>
+          <span class="text-sm bg-purple-200 text-purple-700 px-2 py-1 rounded-full">🎄 Christmas Discount</span>
+          <p class="mt-2 text-3xl font-bold">
+            $<span class="price" data-hourly="8" data-onetime="300">8</span>
+            <span class="text-sm text-gray-600">/per hour</span>
+          </p>
+          <button class="mt-4 bg-purple-600 text-white py-2 px-4 rounded-lg w-full">
+            Get Started
+          </button>
+          <div class="mt-4 h-[200px] overflow-y-auto p-2 rounded-lg custom-scrollbar">
+            <ul class="space-y-2 text-gray-600">
+              <li>✔ Everything in Professional plus</li>
+              <li>✔ Custom Designed Homepage (3x Concepts)</li>
+              <li>✔ 20 Custom Designed Inner Pages</li>
+              <li>✔ Interactive and Dynamic Website Design</li>
+              <li>✔ Up to 1000 - 1500 Products</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Web Design Plans (Hidden by Default) -->
+        <div class="pricing-card hidden text-start bg-white p-6 rounded-lg shadow-lg" data-category="webdesign">
+          <h3 class="text-xl font-bold">Web Design Starter</h3>
+          <p class="mt-2 text-3xl font-bold">
+            $<span class="price" data-hourly="5" data-onetime="150">5</span>
+            <span class="text-sm text-gray-600">/per hour</span>
+          </p>
+          <button class="mt-4 bg-purple-600 text-white py-2 px-4 rounded-lg w-full">
+            Get Started
+          </button>
+          <div class="mt-4 h-[200px] overflow-y-auto p-2 rounded-lg custom-scrollbar">
+            <ul class="space-y-2 text-gray-600">
+              <li>✔ Everything in Professional plus</li>
+              <li>✔ Custom Designed Homepage (3x Concepts)</li>
+              <li>✔ 20 Custom Designed Inner Pages</li>
+              <li>✔ Interactive and Dynamic Website Design</li>
+              <li>✔ Up to 1000 - 1500 Products</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SEO Plans (Hidden by Default) -->
+        <div class="pricing-card hidden text-start bg-white p-6 rounded-lg shadow-lg" data-category="seo">
+          <h3 class="text-xl font-bold">SEO Optimization</h3>
+          <p class="mt-2 text-3xl font-bold">
+            $<span class="price" data-hourly="7" data-onetime="250">7</span>
+            <span class="text-sm text-gray-600">/per hour</span>
+          </p>
+          <button class="mt-4 bg-purple-600 text-white py-2 px-4 rounded-lg w-full">
+            Get Started
+          </button>
+          <ul class="mt-4 space-y-2 text-gray-600">
+            <li>✔ Everything in Professional plus</li>
+            <li>✔ Custom Designed Homepage (3x Concepts)</li>
+            <li>✔ 20 Custom Designed Inner Pages</li>
+            <li>✔ Interactive and Dynamic Website Design</li>
+            <li>✔ Up to 1000 - 1500 Products</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class=" py-10">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold">Testimonials</h2>
+      <div class="flex justify-center space-x-4 mt-3">
+        <div class="flex items-center">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
+            class="w-5 h-5" />
+          <span class="ml-2 text-lg font-semibold">4.8</span>
+        </div>
+        <div class="flex items-center">
+          <span class="text-lg font-semibold">Clutch 4.8</span>
+        </div>
+        <div class="flex items-center">
+          <span class="text-lg font-semibold">Trustpilot 4.8</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper mySwipertestimonials max-w-4xl mx-auto mt-6">
+      <div class="swiper-wrapper">
+
+        <!-- Testimonial 1 -->
+        <div class="swiper-slide bg-white p-6 rounded-lg shadow-md">
+          <div class="flex items-center space-x-4">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-12 h-12 rounded-full">
+            <div>
+              <h3 class="font-semibold">Guido Schilperoort</h3>
+              <p class="text-sm text-gray-500">Aug 26, 2024</p>
+            </div>
+          </div>
+          <div class="mt-3">
+            <p class="text-yellow-500">★★★★★</p>
+            <p class="font-semibold">Overall Great Experience</p>
+            <p class="text-gray-600 text-sm mt-2">
+              I had the pleasure of collaborating with Haloid to build two apps. His professionalism and support helped
+              us create and submit our apps successfully.
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="swiper-slide bg-white p-6 rounded-lg shadow-md">
+          <div class="flex items-center space-x-4">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-12 h-12 rounded-full">
+            <div>
+              <h3 class="font-semibold">Antonia Engfors</h3>
+              <p class="text-sm text-gray-500">Sep 20, 2024</p>
+            </div>
+          </div>
+          <div class="mt-3">
+            <p class="text-yellow-500">★★★★★</p>
+            <p class="font-semibold">Outstanding Results</p>
+            <p class="text-gray-600 text-sm mt-2">
+              We worked with Haloid on a website and mobile app, and the communication and results were great! We are
+              happy to work with them again.
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="swiper-slide bg-white p-6 rounded-lg shadow-md">
+          <div class="flex items-center space-x-4">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" class="w-12 h-12 rounded-full">
+            <div>
+              <h3 class="font-semibold">Brennen Awana</h3>
+              <p class="text-sm text-gray-500">Sep 25, 2024</p>
+            </div>
+          </div>
+          <div class="mt-3">
+            <p class="text-yellow-500">★★★★★</p>
+            <p class="font-semibold">Excellent Work</p>
+            <p class="text-gray-600 text-sm mt-2">
+              The technical expertise and customer-focused approach of Haloid impressed me. They tailored the final
+              product to our requirements perfectly.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- Swiper Pagination -->
+      <div class="swiper-pagination relative mt-4"></div>
+    </div>
+  </section>
+
+
+
+  <!-- <div id="loader" class="fixed inset-0 flex items-center justify-center bg-white z-50">
+        <div class="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+      </div> -->
+  <!-- Footer will be inserted here -->
+  <div id="footer-container"></div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper1 = new Swiper(".mySwiper12", {
+      slidesPerView: 1, // Allows dynamic width
+
+      loop: true,
+      loopedSlides: 10, // Ensures smooth loop
+      speed: 5000, // Makes movement more continuous
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      allowTouchMove: true, // Prevents manual stopping
+      freeMode: true, // Enables seamless scrolling
+      loopFillGroupWithBlank: true, // Ensures smooth looping
+      direction: "horizontal",
+      breakpoints: {
+        320: { slidesPerView: 1 },
+        360: { slidesPerView: 2 },
+        480: { slidesPerView: 2.5 },
+        540: { slidesPerView: 3 },
+        640: { slidesPerView: 4 },
+        768: { slidesPerView: 4 },
+        900: { slidesPerView: 4 },
+        1024: { slidesPerView: 5 },
+        1200: { slidesPerView: 6 },
+        1400: { slidesPerView: 6 },
+        1600: { slidesPerView: 6 },
+        1920: { slidesPerView: 6 },
+
+      },
+    });
+
+    var swiper2 = new Swiper(".mySwiper22", {
+      slidesPerView: "auto",
+      spaceBetween: 10,
+      loop: true,
+      loopedSlides: 10,
+      speed: 5000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+        reverseDirection: true,
+      },
+      allowTouchMove: true,
+      freeMode: true,
+      loopFillGroupWithBlank: true,
+      direction: "horizontal",
+      breakpoints: {
+        320: { slidesPerView: 1 },
+        360: { slidesPerView: 2 },
+        480: { slidesPerView: 2.5 },
+        540: { slidesPerView: 3 },
+        640: { slidesPerView: 4 },
+        768: { slidesPerView: 4 },
+        900: { slidesPerView: 4 },
+        1024: { slidesPerView: 5 },
+        1200: { slidesPerView: 6 },
+        1400: { slidesPerView: 6 },
+        1600: { slidesPerView: 6 },
+        1920: { slidesPerView: 6 },
+
+      },
+    });
+
+
+    var swiper3 = new Swiper(".mySwiper3", {
+      slidesPerView: 2,
+
+      loop: true,
+      loopedSlides: 10,
+      speed: 5000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+        reverseDirection: true,
+      },
+      allowTouchMove: true,
+      freeMode: true,
+      loopFillGroupWithBlank: true,
+      direction: "horizontal",
+      breakpoints: {
+        320: { slidesPerView: 2 },
+        360: { slidesPerView: 3 },
+        480: { slidesPerView: 4 },
+        540: { slidesPerView: 4 },
+        640: { slidesPerView: 5 },
+        768: { slidesPerView: 6 },
+        900: { slidesPerView: 7 },
+        1024: { slidesPerView: 8 },
+        1200: { slidesPerView: 9 },
+        1400: { slidesPerView: 10 },
+        1600: { slidesPerView: 12 },
+        1920: { slidesPerView: 12 }
+      },
+    });
+
+    var swiper4 = new Swiper(".mySwiper4", {
+      slidesPerView: 2, // Allows dynamic width
+
+      loop: true,
+      loopedSlides: 10, // Ensures smooth loop
+      speed: 5000, // Makes movement more continuous
+      autoplay: { delay: 0, disableOnInteraction: false },
+      allowTouchMove: true, // Prevents manual stopping
+      freeMode: true, // Enables seamless scrolling
+      loopFillGroupWithBlank: true, // Ensures smooth looping
+      direction: "horizontal",
+      breakpoints: {
+        320: { slidesPerView: 2 },
+        360: { slidesPerView: 3 },
+        480: { slidesPerView: 4 },
+        540: { slidesPerView: 4 },
+        640: { slidesPerView: 5 },
+        768: { slidesPerView: 6 },
+        900: { slidesPerView: 7 },
+        1024: { slidesPerView: 8 },
+        1200: { slidesPerView: 9 },
+        1400: { slidesPerView: 10 },
+        1600: { slidesPerView: 12 },
+        1920: { slidesPerView: 12 }
+      },
+    });
+    // Click & Drag Scrolling for Entire Container
+    const scrollContainer = document.querySelector(".scroll-container");
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    scrollContainer.addEventListener("mousedown", (e) => {
+      isDown = true;
+      scrollContainer.classList.add("active");
+      startX = e.pageX - scrollContainer.offsetLeft;
+      scrollLeft = scrollContainer.scrollLeft;
+    });
+
+    scrollContainer.addEventListener("mouseleave", () => {
+      isDown = false;
+    });
+
+    scrollContainer.addEventListener("mouseup", () => {
+      isDown = false;
+    });
+
+    scrollContainer.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+
+      e.preventDefault();
+      const x = e.pageX - scrollContainer.offsetLeft;
+      const walk = (x - startX) * 2; // Adjust scroll speed
+      scrollContainer.scrollLeft = scrollLeft - walk;
+    });
+
+    // Prevent default behavior to avoid unwanted selection while dragging
+    scrollContainer.addEventListener("dragstart", (e) => e.preventDefault());
+
+
+
+
+
+    // Toggle Pricing (One Time / Hourly)
+    // Function to set the default pricing on page load
+    function setDefaultPricing() {
+      document.querySelectorAll(".price").forEach((el) => {
+        el.innerText = el.getAttribute("data-onetime"); // Set default to One Time pricing
+      });
+    }
+
+    // Toggle Pricing (One Time / Hourly)
+    document.getElementById("toggleSwitch").addEventListener("change", function () {
+      let isHourly = this.checked;
+      document.querySelectorAll(".price").forEach((el) => {
+        el.innerText = isHourly
+          ? el.getAttribute("data-hourly")
+          : el.getAttribute("data-onetime");
+      });
+    });
+
+    // Run the default pricing setup on page load
+    document.addEventListener("DOMContentLoaded", setDefaultPricing);
+
+    // Tab Switching Logic
+    const tabs = document.querySelectorAll(".tab-btn");
+    const pricingCards = document.querySelectorAll(".pricing-card");
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", function () {
+        // Remove active class from all tabs
+        tabs.forEach((t) =>
+          t.classList.remove("bg-purple-600", "text-white")
+        );
+        this.classList.add("bg-purple-600", "text-white");
+
+        // Get selected category
+        const category = this.getAttribute("data-category");
+
+        // Show only matching category cards
+        pricingCards.forEach((card) => {
+          if (card.getAttribute("data-category") === category) {
+            card.classList.remove("hidden");
+          } else {
+            card.classList.add("hidden");
+          }
+        });
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
